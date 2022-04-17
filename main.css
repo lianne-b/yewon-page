@@ -1,0 +1,39 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+:root {
+    --page-margin: 30px;
+    --highlight-color: rgb(255, 107, 67);
+    /* font sizes */
+    --title-text: 20px;
+    --subtitle-text: 17px;
+    --body-text: 14px;
+}
+
+body {
+    font-family: 'Secular One', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--highlight-color);
+    box-sizing: border-box;
+}
+
+.pageSections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page {
+    margin-left: 30px;
+}
+
+.title {
+    color: white;
+    font-size: var(--title-text);
+}
