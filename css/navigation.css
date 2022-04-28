@@ -21,6 +21,10 @@ nav {
     right: 0;
 }
 
+.navCollapsed:hover {
+    cursor: pointer;
+}
+
 .siteTitle {
     display: flex;
     justify-content: space-between;
@@ -47,4 +51,16 @@ nav {
     color: var(--sub-color-pup);
     font-size: var(--title-text);
     width: 116.5px;
+}
+
+.navOpened {
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    justify-content: end;
+    align-items: flex-end;
+    padding: var(--page-margin);
+    box-sizing: border-box;
+    font-size: var(--page-title-text);
 }

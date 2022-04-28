@@ -16,6 +16,11 @@ html, body {
 
 body {
     position: relative;
+    font-family: 'Secular One', sans-serif;
+}
+
+.hidden {
+    display: none;
 }
 
 a, a:focus {
@@ -49,19 +54,22 @@ a:hover {
     .siteSections {
         visibility: hidden;
     }
+    .subGif {
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 544px) {
     .navCollapsed {
         visibility: hidden;
     }
+    .navOpened {
+        display: none;
+    }
 }
 
-body {
-    font-family: 'Secular One', sans-serif;
-}
-
-#mainGif {
+.frontGif > img {
+    text-decoration: none;
     width: 100vw;
     height: 100vh;
     object-fit: cover;
@@ -70,6 +78,7 @@ body {
     top: 0;
     bottom: 0;
     z-index: -1;
+    margin-top: -30px;
     box-sizing: border-box;
 }
 
@@ -80,4 +89,9 @@ body {
     position:absolute;
     bottom: 0;
     line-height: 90%;
+}
+
+.subGif {
+    display: flex;
+    margin-top: -10px;
 }

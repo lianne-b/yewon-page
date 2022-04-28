@@ -15,28 +15,55 @@
   <body>
     <nav>
       <div class="siteTitle">
-        <div class="icon"><i class="fa-solid fa-skull"></i></div>
-        <div class="title"><a href="index.html">Yewon Kim</a></div>
+        <ul class="icon">
+          <i class="fa-solid fa-skull"></i>
+        </ul>
+        <ul class="title">
+          <a href="index.html">Yewon Kim</a>
+        </ul>
       </div>
       <div class="siteSections">
         <!--<div class="page">About Me</div>-->
-        <div class="section"><a href="resume.html">Resume</a></div>
-        <div class="section"><a href="reel.html">Reel</a></div>
-        <div class="section"><a href="contact.html">Contact</a></div>
+        <ul class="section">
+          <a href="resume.html">Resume</a>
+        </ul>
+        <ul class="section">
+          <a href="reel.html">Reel</a>
+        </ul>
+        <ul class="section">
+          <a href="contact.html">Contact</a>
+        </ul>
       </div>
     </nav>
 
-    <div class="navCollapsed">
+    <div class="navCollapsed" onclick="openNav()">
       <i class="fa-solid fa-bars fa-2x"></i>
     </div>
 
-    <img id="mainGif"
-      src="assets/main_gif.gif"
-      />
-  </img>
-
-    <div class="greetingText">
-      <span>Hi there.<br>It's Yewon!</span>
+    <div class="navOpened">
+      <!--<div class="page">About Me</div>-->
+      <ul class="section">
+        <a href="resume.html">Resume</a>
+      </ul>
+      <ul class="section">
+        <a href="reel.html">Reel</a>
+      </ul>
+      <ul class="section">
+        <a href="contact.html">Contact</a>
+      </ul>
     </div>
+
+    <container>
+      <ul class="frontGif">
+        <img src="assets/main_gif.gif" />
+      </ul>
+
+      <ul class="subGif">
+        <img src="assets/gif_1.gif" />
+        <img src="assets/gif_2.gif" />
+      </ul>
+
+      <span class="greetingText">Hello!<br />It's Yewon!</span>
+    </container>
   </body>
 </html>
