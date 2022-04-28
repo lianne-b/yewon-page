@@ -5,8 +5,12 @@ html, body {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
+body {
+    position: relative
+}
 
 
 :root {
@@ -44,7 +48,7 @@ body {
 
 nav {
     width: inherit;
-    min-width: 475px;
+    min-width: 375px;
     display: flex;
     justify-content: space-between;
     align-items: center;
