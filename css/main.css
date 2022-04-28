@@ -1,4 +1,9 @@
-@import url(reset.css);
+@import url("reset.css");
+@import url("resume.css");
+@import url("reel.css");
+@import url("contact.css");
+
+@import url("navigation.css");
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
 html, body {
@@ -10,9 +15,17 @@ html, body {
 }
 
 body {
-    position: relative
+    position: relative;
 }
 
+a, a:focus {
+    text-decoration: none;
+    color: var(--sub-color-pup);
+}
+
+a:hover {
+    color: var(--sub-color-blu)
+}
 
 :root {
     --page-margin: 30px;
@@ -20,19 +33,20 @@ body {
     --main-color: rgb(255, 162, 193);
     --sub-color-pnk: rgb(250, 192, 239);
     --sub-color-org: rgb(255, 204, 94);
-    --sub-color-ylw: rgb(251, 255, 184);
+    --sub-color-light-org: rgb(255, 235, 211);
     --sub-color-pup: rgb(96, 75, 149);
     --sub-color-blu: rgb(90, 120, 212);
     --sub-color-wht: white;
     /* font sizes */
     --title-text: 22px;
     --subtitle-text: 17px;
+    --page-title-text: 35px;
     --body-text: 14px;
     --greeting-text: 80px;
 }
 
 @media screen and (max-width: 544px) {
-    .pageSections {
+    .siteSections {
         visibility: hidden;
     }
 }
@@ -47,62 +61,10 @@ body {
     font-family: 'Secular One', sans-serif;
 }
 
-nav {
-    width: inherit;
-    min-width: 375px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    background-color: var(--sub-color-pnk);
-    box-sizing: border-box;
-}
-
-.navCollapsed {
-    justify-content: center;
-
-    color: var(--sub-color-pup);
-    z-index: 1;
-    padding: 30px;
-    margin-top: 6px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.pageTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.icon {
-    margin-right: 5px;
-    color: var(--sub-color-pup)
-}
-
-.pageSections {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.page {
-    margin-left: 30px;
-    color: var(--sub-color-blu);
-}
-
-.title {
-    color: var(--sub-color-pup);
-    font-size: var(--title-text);
-    width: 116.5px;
-}
-
-#bgVideo {
+#mainGif {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    position: fixed;
     left: 0;
     right: 0;
     top: 0;
