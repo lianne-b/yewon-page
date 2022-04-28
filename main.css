@@ -44,6 +44,7 @@ body {
 
 nav {
     width: inherit;
+    min-width: 475px;
     display: flex;
     justify-content: space-between;
     align-items: center;
