@@ -1,6 +1,12 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
+body {
+    width: 100%;
+}
+
+
+
 :root {
     --page-margin: 30px;
     /* color scheme */
@@ -45,6 +51,7 @@ nav {
 
 .navCollapsed {
     justify-content: center;
+
     color: var(--sub-color-pup);
     z-index: 1;
     padding: 30px;
