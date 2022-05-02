@@ -1,5 +1,6 @@
 #reel {
     margin-top: var(--page-margin);
     margin-bottom: 100px;
+    width: 100vw;
 }
 

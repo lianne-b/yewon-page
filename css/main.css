@@ -17,6 +17,7 @@ html, body {
 body {
     position: relative;
     font-family: 'Secular One', sans-serif;
+    background-color: var(--sub-color-light-org);
 }
 
 .hidden {
@@ -44,10 +45,10 @@ a:hover {
     --sub-color-wht: white;
     /* font sizes */
     --title-text: 22px;
-    --subtitle-text: 17px;
-    --page-title-text: 35px;
+    --subtitle-text: 20px;
+    --page-title-text: 38px;
     --body-text: 14px;
-    --greeting-text: 80px;
+    --greeting-text: 50px;
 }
 
 @media screen and (max-width: 544px) {
@@ -56,6 +57,15 @@ a:hover {
     }
     .subGif {
         flex-direction: column;
+    }
+    .greetingText {
+        font-size: var(--page-title-text);
+        bottom: 200px;
+    }
+
+    .introductionText {
+        font-size: var(--subtitle-text);
+        bottom: 60px;
     }
 }
 
@@ -66,6 +76,45 @@ a:hover {
     .navOpened {
         display: none;
     }
+
+    .greetingText {
+        font-size: var(--greeting-text);
+        bottom: 250px;
+        min-width: 450px;
+        padding-bottom: 30px;
+        align-self: center;
+    }
+
+    .introductionText {
+        font-size: var(--title-text);
+        bottom: 100px;
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width:544px) {
+    .greetingText {
+        width: 300px;
+    }
+    .introductionText {
+        font-size: var(--body-text);
+    }
+}
+
+
+
+
+container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--page-margin);
+}
+
+.indexPage {
+    background-color: var(--sub-color-blu);
 }
 
 .frontGif > img {
@@ -82,16 +131,39 @@ a:hover {
     box-sizing: border-box;
 }
 
+
+
 .greetingText {
     margin: var(--page-margin);
     color: var(--sub-color-wht);
-    font-size: var(--greeting-text);
-    position:absolute;
-    bottom: 0;
-    line-height: 90%;
+    position:sticky;
+    line-height: 120%;
+}
+
+.greetingText > span:first-child {
+    font-size: 150px;
+}
+
+.greetingText > img {
+    width: 130px;
+}
+
+.introductionText {
+    margin: var(--page-margin);
+    color: var(--sub-color-wht);
+    position:sticky;
+    line-height: 150%;
+    
 }
 
 .subGif {
+    width: 100vw;
+    height: auto;
     display: flex;
     margin-top: -10px;
+    object-fit: cover;
+}
+
+.subGif img {
+    width: 150%;
 }

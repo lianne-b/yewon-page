@@ -1,16 +1,4 @@
 
-body {
-    background-color: var(--sub-color-light-org);
-}
-
-container {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: var(--page-margin);
-}
 
 .pageTitle > .title {
     font-size: var(--page-title-text);
