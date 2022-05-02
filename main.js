@@ -1,11 +1,7 @@
-// navOpened = document.getElementsByClassName("navOpened");
+navOpened = document.getElementsByClassName("navOpened");
 
 
-// window.onload = function() {
-//     function openNav() {
-//         navOpened = document.getElementsByClassName("navOpened");
-//         const list = navOpened.classList;
-//         list.remove("hidden");
-//     }
-    
-// }
+function openNav() {
+    let nav = document.querySelector(".navOpened");
+    nav.classList.toggle("hidden");
+}

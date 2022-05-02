@@ -15,19 +15,42 @@
   <body>
     <nav>
       <div class="siteTitle">
-        <div class="icon"><i class="fa-solid fa-skull"></i></div>
-        <div class="title"><a href="index.html">Yewon Kim</a></div>
+        <ul class="icon">
+          <i class="fa-solid fa-skull"></i>
+        </ul>
+        <ul class="title">
+          <a href="index.html">Yewon Kim</a>
+        </ul>
       </div>
       <div class="siteSections">
         <!--<div class="page">About Me</div>-->
-        <div class="section"><a href="resume.html">Resume</a></div>
-        <div class="section"><a href="reel.html">Reel</a></div>
-        <div class="section"><a href="contact.html">Contact</a></div>
+        <ul class="section">
+          <a href="resume.html">Resume</a>
+        </ul>
+        <ul class="section">
+          <a href="reel.html">Reel</a>
+        </ul>
+        <ul class="section">
+          <a href="contact.html">Contact</a>
+        </ul>
       </div>
     </nav>
 
-    <div class="navCollapsed">
+    <div class="navCollapsed" onclick="openNav()">
       <i class="fa-solid fa-bars fa-2x"></i>
+    </div>
+
+    <div class="navOpened hidden">
+      <!--<div class="page">About Me</div>-->
+      <ul class="section">
+        <a href="resume.html">Resume</a>
+      </ul>
+      <ul class="section">
+        <a href="reel.html">Reel</a>
+      </ul>
+      <ul class="section">
+        <a href="contact.html">Contact</a>
+      </ul>
     </div>
   </body>
 </html>

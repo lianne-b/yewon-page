@@ -4,7 +4,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: var(--page-margin);
     background-color: var(--main-color);
     box-sizing: border-box;
 }
@@ -14,7 +14,7 @@ nav {
 
     color: var(--sub-color-pup);
     z-index: 1;
-    padding: 30px;
+    padding: var(--page-margin);
     margin-top: 6px;
     position: absolute;
     top: 0;
@@ -23,6 +23,7 @@ nav {
 
 .navCollapsed:hover {
     cursor: pointer;
+    color: var(--sub-color-blu);
 }
 
 .siteTitle {
@@ -43,7 +44,7 @@ nav {
 }
 
 .section {
-    margin-left: 30px;
+    margin-left: var(--page-margin);
     color: var(--sub-color-blu);
 }
 
@@ -55,12 +56,15 @@ nav {
 
 .navOpened {
     display: flex;
-    width: 100%;
+    width: 100vw;
     position: relative;
-    z-index: 2;
-    justify-content: end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     padding: var(--page-margin);
-    box-sizing: border-box;
     font-size: var(--page-title-text);
+}
+
+.navOpened > .section {
+    font-size: var(--title-text);
+
 }
